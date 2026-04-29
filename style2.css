@@ -1,0 +1,141 @@
+/* --- إعدادات عامة لكل الصفحات --- */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: #f8faff; /* خلفية مريحة تميل للسماوي البارد */
+    direction: rtl; /* دعم اللغة العربية */
+    color: #444;
+}
+
+/* --- الهيدر الموحد --- */
+header {
+    background: linear-gradient(135deg, #a29bfe, #81ecec);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* --- قائمة التنقل الرئيسية --- */
+.main-nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #6c5ce7; /* بنفسجي */
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.main-nav a:hover {
+    color: #00cec9; /* سماوي عند التمرير */
+    background: #f0f0ff;
+    border-radius: 8px;
+}
+
+/* --- الحاوية الرئيسية للمحتوى --- */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    min-height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(162, 155, 254, 0.1);
+}
+
+/* --- تنسيق العناوين داخل الصفحات --- */
+h2 {
+    color: #6c5ce7;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #81ecec;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* --- تنسيق النماذج (Forms) - مهم لصفحة التسجيل واللوحة --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #a29bfe;
+    box-shadow: 0 0 5px rgba(162, 155, 254, 0.5);
+}
+
+button, .btn {
+    background: #6c5ce7;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    background: #81ecec;
+    color: #2d3436;
+}
+
+/* --- الفوتر الموحد --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #2d3436;
+    color: #81ecec;
+    font-size: 0.9rem;
+}
+
+/* --- تنسيق الجداول (لمنصة الإدارة) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #a29bfe;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
