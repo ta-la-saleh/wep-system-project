@@ -212,3 +212,66 @@ footer {
         gap: 15px;
     }
 }
+/* تنسيقات خاصة بصفحة تسجيل الدخول */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8faff, #81ecec);
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(162, 155, 254, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: none; /* إزالة خلفية الهيدر الافتراضية هنا */
+    color: #6c5ce7;
+    box-shadow: none;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+.error-msg {
+    color: #ff7675;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+}
+
+.login-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer a {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: bold;
+}
