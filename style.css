@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
 * {
@@ -5,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
-}
+} 
 
 body {
     background-color: #f4f7fe;
@@ -13,11 +14,6 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 header {
     background: linear-gradient(135deg, #a29bfe, #81ecec);
@@ -71,6 +67,8 @@ header h1 {
     color: #a29bfe;
 }
 
+
+
 .main-nav {
     background: white;
     margin: 20px 0;
@@ -99,6 +97,8 @@ header h1 {
     border-bottom: 3px solid #81ecec;
 }
 
+
+
 .major-intro {
     background: #f5f9ff;
     padding: 18px 22px;
@@ -115,22 +115,20 @@ header h1 {
     text-align: left;
 }
 
-.major-intro p {
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.7;
-    color: #333;
-    text-align: left;
-}
 
 main h2 {
     margin-bottom: 20px;
     color: #2d3436;
-    border-right: 5px solid #a29bfe;
-    padding-right: 15px;
-    direction: ltr;
+    border-left: 5px solid #a29bfe;
+    padding-left: 15px;
     text-align: left;
+    direction: ltr;
+    display: inline-block;
+    border-bottom: 2px solid #dce6f7;
 }
+
+
+
 
 .offers-grid {
     display: grid;
@@ -139,8 +137,9 @@ main h2 {
     margin-bottom: 50px;
     direction: ltr;
     justify-items: start;
-    text-align: left;
 }
+
+
 
 .offer-card {
     background: white;
@@ -192,6 +191,7 @@ main h2 {
     color: white;
 }
 
+
 footer {
     background: #2d3436;
     color: #dfe6e9;
@@ -200,27 +200,26 @@ footer {
     border-radius: 15px 15px 0 0;
 }
 
-.footer-links {
-    margin-bottom: 20px;
-}
-
 .footer-links a {
     color: #81ecec;
     text-decoration: none;
     margin: 0 10px;
     font-size: 0.9rem;
 }
-
-.social-media {
-    margin-bottom: 20px;
-    color: #a29bfe;
+ .offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-copyright {
-    border-top: 1px solid #636e72;
-    padding-top: 20px;
-    font-size: 0.8rem;
+.it-info{
+    color: #000000;
+    size: 50%;
+
 }
+
+
+
 
 @media (max-width: 768px) {
     .offers-grid {
@@ -231,3 +230,7 @@ copyright {
         gap: 15px;
     }
 }
+
+
+
+ 
