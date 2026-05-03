@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+/* الهيدر */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background: linear-gradient(90deg, #2347d8, #684bc0);
+    color: white;
+    direction: ltr;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100px; /* أو أي رقم يناسبك */
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* يمين: Home + Profile */
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 18px;
+}
+
+.nav-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+ 
+.divider{
+    width: 1.5px;
+    height: 22px;
+    background-color:  rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+.home-pos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.profile-pos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space:nowrap;
+}
+
+.profile-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+.nav-home {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* النص: خانة البحث */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 5px;
+    width: 380px;
+    height: 48px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    
+}
+
+.search-button {
+    background: linear-gradient(90deg, #4e67c9, #684bc0);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-icon{
+    width: 30px;
+    height: px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;   /* يخلي الحرف والاسم بنفس الخط */             /* مسافة بسيطة بينهم */
+}
+
+.logo-img {
+    width: 150px;           /* نفس حجم اللوقو اللي بالصورة */
+    height: auto;
+}
+
+.part1 {
+    font-size: 26px;
+    font-weight: 700;      /* Bold */
+    color: rgb(255, 255, 255);  
+   
+}
+
+.part2 {
+    font-size: 26px;
+    font-weight: 700;      /* Bold */
+    color: #6b67d7;    /* يخلي التدرج داخل النص */
+}
+
+
+/* ABOUT */
+.about-section {
+    background: rgb(255, 255, 255);
+    margin: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: left; /* ← إضافة */
+}
+
+.about-h2{
+    margin-bottom: 15px;
+    color: #0e1232;
+    align-items: right;
+}
+
+.linebefore{
+    width: 5px;
+    height: 25px;
+    background: linear-gradient(90deg, #2347d8, #684bc0);
+    border-radius: 3px;
+   
+}
+/* TITLE */
+.courses-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 30px;
+    text-align: left; /* ← إضافة */
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+    direction: ltr;
+    justify-items: start;
+}
+
+
+
+.offer-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+}
+
+.offer-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.offer-card h3 {
+    margin: 15px 0;
+    color: #6c5ce7;
+}
+
+.offer-card .description {
+    padding: 0 15px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+.view-btn {
+    display: inline-block;
+    background: #81ecec;
+    color: #2d3436;
+    padding: 8px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: #a29bfe;
+    color: white;
+}
+
+/* BUTTON */
+.details-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* المسافة بين السهم والكلمة */
+    text-decoration: none;
+    background: #1E88E5;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.arrow-img {
+    width: 6px;
+    height: 6px;
+    object-fit: contain;
+    display: block;
+    max-width: 6px ;
+    max-height: 6px ;
+}
+
+
+
+
+
+/* FEATURES */
+.features {
+    margin: 30px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    direction: ltr; /* ← إضافة */
+    text-align: left; /* ← إضافة */
+}
+
+.feature-box {
+    text-align: center;
+}
+
+.feature-box img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+/* خلفية منبثقة */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(4px);
+}
+
+
+
+
+
+/* الصندوق الصغير */
+.small-login-box {
+    width: 350px; /* صغير مره */
+    background: #ffffff;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    color: #444;
+
+
+}
+
+/* زر الإغلاق */
+/* .close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    font-size: 22px;
+    cursor: pointer; */
+
+
+.Profile, .Profile * {
+    cursor: pointer;
+}
+
+
+/* اللوقو */
+.login-header {
+    position: relative;
+    text-align: center;
+}
+
+.login-header h2 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* الفورم */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+    color: #3b5bdb;
+}
+
+.login-form label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.login-form input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.login-btn {
+    padding: 8px;
+    background: #4e67c9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.text1 {
+    color: #3546ca;
+    font-size: 20px;
+}
+    
+
+.text2 {
+    color: #9266e5;
+    font-size: 20px; /* البنفسجي الفاتح */
+}
+
+/* النص اللي تحت */
+.signup {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.signup a {
+    color: #4e67c9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* MODAL */
+/* .login-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    position: relative;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #3b5bdb, #6c3cff);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+*/
+.close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+} 
