@@ -117,6 +117,10 @@
     align-items: center;   /* يخلي الحرف والاسم بنفس الخط */             /* مسافة بسيطة بينهم */
 }
 
+.login-btn{
+    text-decoration: none;
+}
+
 .logo-img {
     width: 150px;           /* نفس حجم اللوقو اللي بالصورة */
     height: auto;
@@ -133,6 +137,34 @@
     font-size: 26px;
     font-weight: 700;      /* Bold */
     color: #6b67d7;    /* يخلي التدرج داخل النص */
+}
+
+.main-nav {
+    background: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #636e72;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color:  #684bc0;
+    border-bottom: 3px solid #2347d8;
 }
 
 
@@ -152,6 +184,54 @@
     align-items: right;
 }
 
+.home-section{
+    height: 200px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    margin: 25px;
+    padding: 30px 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* يخلي النص والصورة بالنص عمودي */
+}
+
+.computer-img{
+   max-width: 300px;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column; /* يخلي النصوص تحت بعض */
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px; 
+    width: 100%;
+   
+}
+
+
+
+.h1-home{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.h2-home{
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, #4e67c9, #684bc0);
+    background-clip: text;
+    color: transparent;
+}
+
 .linebefore{
     width: 5px;
     height: 25px;
@@ -159,6 +239,53 @@
     border-radius: 3px;
    
 }
+
+.major{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.spec-box {
+    background: #ffffff;
+    width: 180px;
+    padding: 25px 15px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.spec-box:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #979ce5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin: 0 auto 10px;
+}
+
+.spec-box h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.spec-box p {
+    font-size: 14px;
+    color: #777;
+}
+
+
 /* TITLE */
 .courses-title {
     display: flex;
@@ -168,22 +295,27 @@
     text-align: left; /* ← إضافة */
 }
 
-.offer-grid {
+.courses-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-bottom: 50px;
-    direction: ltr;
-    justify-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 35px;
+    padding: 0 30px;
+    margin-bottom: 40px;
 }
 
+.major-link{
+    text-decoration: none;
+     color:  #ffffff;
+    border-bottom: 3px solid #2347d8;
+    
+}
 
 
 .offer-card {
     background: white;
-    border-radius: 15px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     transition: transform 0.3s;
     text-align: center;
     padding-bottom: 20px;
@@ -196,38 +328,83 @@
 
 .offer-card img {
     width: 100%;
-    height: 180px;
+    height: 190px;
     object-fit: cover;
 }
 
 .offer-card h3 {
-    margin: 15px 0;
+    margin: 15px 0 10px;
+    font-size: 20px;
     color: #6c5ce7;
 }
 
 .offer-card .description {
-    padding: 0 15px;
-    font-size: 0.9rem;
+    padding: 0 18px;
+    font-size: 14px;
     color: #7f8c8d;
     text-align: center;
 }
 
 .view-btn {
     display: inline-block;
-    background: #81ecec;
-    color: #2d3436;
-    padding: 8px 25px;
+    background: linear-gradient(90deg, #2347d8, #684bc0);
+    color: #ffffff;
+    padding: 10px 28px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
     transition: 0.3s;
 }
 
 .view-btn:hover {
     background: #a29bfe;
+    opacity: 0,85;
     color: white;
 }
+
+.offer-card {
+    position: relative;
+}
+
+.card-header {
+    position: relative;
+}
+
+/* القلب داخل دائرة بيضاء */
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* يمين */
+    
+    width: 28px;      /* كبرتها شوي */
+    height: 28px;
+    background: white; /* دائرة بيضاء */
+    border-radius: 50%; /* دائرة */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px; /* حجم القلب */
+    color: black;    /* القلب أسود */
+    cursor: pointer;
+    transition: 0.25s ease;
+
+    /* حدود خفيفة للدائرة */
+    border: 1px solid #ddd;
+}
+
+/* hover → القلب يمتلي أحمر */
+.favorite-icon:hover {
+    color: red;
+}
+
+/* click → يبقى أحمر */
+.favorite-icon.active {
+    color: red;
+}
+
 
 /* BUTTON */
 .details-btn {
@@ -306,15 +483,6 @@
 
 
 }
-
-/* زر الإغلاق */
-/* .close {
-    position: absolute;
-    right: 12px;
-    top: 8px;
-    font-size: 22px;
-    cursor: pointer; */
-
 
 .Profile, .Profile * {
     cursor: pointer;
