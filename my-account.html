@@ -1,20 +1,58 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>حسابي - منصة تعليم</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <title>My account</title>
+    <link rel="stylesheet" href="style3.css"> </head>
 <body>
 
-    <header>
-        <h1>EDUCATIONAL COURSES</h1>
-        <nav class="main-nav">
-            <a href="index.html">الرئيسية</a>
-            <a href="register.html">حسابي</a>
-        </nav>
-    </header>
+    <header class="navbar">
 
-    <main class="container">
+    <!-- يسار: اللوقو -->
+   <div class="logo-box">
+    <img src="photo/logo2.png" class="logo-img">
+    <span class="logo-text">
+    <span class="part1">Devora</span><span class="part2">course</span>
+</span>
+
+</div>
+
+
+    <!-- النص: البحث -->
+    <div class="search-box">
+        <img src="photo/search1.png" class="search-icon">
+        <input type="text" placeholder="Search for courses...">
+        <button class="search-button">Search</button>
+    </div>
+
+    <!-- يمين: Home + Profile -->
+    <div class="nav-left">
+        <span class="home-pos">
+            <a href="index.html " class="nav-home"><img src="photo/HOME2.png" class="home-icon"></a>
+            <a href="index.html" class="nav-home">
+                <span class="nav-item">Home</span> 
+            </a>
+         
+        </span>
+
+        <span class="divider"></span>
+
+        <span id="profileBtn"class="Profile">
+            <img src="photo/profile1.png" class="profile-icon">
+             <span class="nav-item">Profile</span> 
+        </span>
+    </div>
+</header>
+
+<section class="about-section">
+    <h2 class="about-h2"><b>Welcome to your account </b></h2>
+    <h4>
+       <b> Cybersecurity :</b> focuses on protecting systems, networks, and data from digital threats
+        by detecting attacks and preventing breaches.
+    </h4>
+</section>
+
+<main class="container">
         <h2>مرحباً بك في حسابك</h2>
         
         <div class="user-info">
@@ -35,9 +73,51 @@
         </div>
     </main>
 
-    <footer>
+   <!--  <header>
+        <h1>EDUCATIONAL COURSES</h1>
+        <nav class="main-nav">
+            <a href="index.html">الرئيسية</a>
+            <a href="register.html">حسابي</a>
+        </nav>
+    </header>
+ -->
+  <!--   <main class="container">
+        <h2>مرحباً بك في حسابك</h2>
+        
+        <div class="user-info">
+            <p><strong>الاسم:</strong> </p>
+            <p><strong>البريد:</strong> </p>
+        </div>
+
+        <div class="favorites-section">
+            <h3>دوراتي المفضلة (❤)</h3>
+            <br>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="course-image.jpg" alt="دورة">
+                    <h3>دورة الذكاء الاصطناعي</h3>
+                    <a href="offer.php?id=4" class="view-btn">مشاهدة الآن</a>
+                </div>
+                </div>
+        </div>
+    </main> -->
+
+    <footer class="navbar">
+
+    <!-- يسار: اللوقو -->
+   <div class="logo-box">
+    <img src="photo/logo2.png" class="logo-img">
+    <span class="logo-text">
+    <span class="part1">Devora</span><span class="part2">course</span>
+</span>
+</div>
+       
+</footer>
+
+
+    <!-- <footer>
         <p>© 2024 جميع الحقوق محفوظة</p>
     </footer>
-
+ -->
 </body>
 </html>
