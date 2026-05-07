@@ -1,10 +1,11 @@
+/* تنسيق الصفحه بشكل عام*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
 }
-
+/* تنسيق كلاس في الهيدر في الصفه الرئيسية */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -17,27 +18,27 @@
     padding-bottom: 0;
     height: 100px;
 }
-
+/* الكلاس الي فيه كود الروابط الاساسيه */
 .nav-left {
     display: flex;
     align-items: center;
     margin-right: 20px;
     gap: 18px;
 }
-
+ /*  home , profile الكلاس الي محطوط فيه رابط ال*/
 .nav-item {
     font-size: 18px;
     font-weight: 600;
     color: white;
 }
-
+ /*  profile الكلاس الي فيه رابط ال */
 .divider {
     width: 1.5px;
     height: 22px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
-
+/* الكلاس الي فيه رابط ال home */
 .home-pos {
     display: flex;
     align-items: center;
@@ -68,7 +69,7 @@
     display: flex;
     justify-content: center;
 }
-
+ /* تنسيق خانة البحث */
 .search-box {
     display: flex;
     align-items: center;
@@ -138,7 +139,7 @@
     margin-bottom: 15px;
     color: #0e1232;
 }
-
+/* تنسيق الصوره الموجوده في الصفحه الرئيسيه */
 .home-section {
     height: 200px;
     overflow: hidden;
@@ -155,7 +156,7 @@
 .computer-img {
     max-width: 300px;
 }
-
+/* تنسيق الكلام الموجود مع الصوره في الصفحه الرئيسيه */
 .home-text {
     display: flex;
     flex-direction: column;
@@ -178,7 +179,7 @@
     background-clip: text;
     color: transparent;
 }
-
+/*  الموجود في الصفحه الرئيسيه  Most Popular Courses تنسيق لل */
 .linebefore {
     width: 5px;
     height: 25px;
@@ -245,7 +246,7 @@
     padding: 0 30px;
     margin-bottom: 40px;
 }
-
+/* تنسيق لينك التخصصات */
 .major-link {
     text-decoration: none;
     color: white;
@@ -326,7 +327,7 @@
     transition: 0.25s ease;
     border: 1px solid #ddd;
 }
-
+ /* تنسيق القلب الظاهر مع كل دوره*/ 
 .favorite-icon:hover,
 .favorite-icon.active {
     color: red;
@@ -441,30 +442,73 @@
     font-weight: 600;
     text-decoration: none;
 }
-
-.nav-footer {
+/* تنسيق الفوتر */
+.main-footer{
     background: linear-gradient(90deg, #2347d8, #684bc0);
-    height: 100px;
+    padding: 50px 0 20px 0;  width: 100vw;position: relative;
+    left: 50%; right: 50%;margin-left: -50%; margin-right: -50%;
+}
+
+
+.footer-grid {
     display: flex;
-    padding: 0 25px;
+    justify-content: space-between; */عشان اوزع الاعمده */
+    gap: 100px;
 }
 
-.footer-col {
-    flex: 1;
-    min-width: 220px;
+.footer-column {
+    flex: 1; /* مساحة كل عامود*/
+    min-width: 200px;
+    margin-bottom: 10px;
 }
 
-.footer-col h3 {
-    font-size: 20px;
-    font-weight: 700;
-    min-width: 220px;
-    margin-bottom: 5px;
+.footer-column h3 {
+    color: #ffffff; /*اللون الابيض للعناوين */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffffff; /* خط بنفسجي تحت العنوان */
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.footer-col p {
-    font-size: 15px;
-    line-height: 1.7;
-    opacity: 0.9;
+.footer-column p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ffffff; /* اللون الابيض للنصوص */
+}
+/* تنسيق القائمه في الفوتر */
+.footer-column ul {
+    list-style: none; /* عشان ما تظهر القائمه بالنقاط*/
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #a29bfe; /* يتغير للبنفسجي عند التمرير */
+    padding-right: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+/* تنسيق الخط الموجود في الفوتر*/ 
+.footer-bottom hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin-bottom: 20px;
+}
+ /* تنسيق اخر جزء في الفوتر*/ 
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #f4f4f5;
 }
 
 .copyright {
@@ -476,10 +520,9 @@
     color: #fff;
 }
 
-.nav-footer .footer-col {
-    margin-left: 100px;
-}
 
+
+ /*  بشكل عام body تنسيق */ 
 body {
     min-height: 100vh;
     display: flex;
@@ -490,75 +533,57 @@ body {
     flex: 1;
 }
 
-.container {
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(162,155,254,0.1);
-}
-
-.card {
-    background: #f9f9fb;
-    width: 400px;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.icon-circle {
-    width: 70px;
-    height: 70px;
-    background: #e6e8ff;
-    border-radius: 50%;
+/* تنسيق صفحة انشاء الحساب*/
+/* الحاوية الكبرى التي تضمن توسيط كل شيء */
+.main-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-bottom: 15px;
-    font-size: 28px;
-    color: #3f51b5;
+    padding: 100px 20px; /* مسافة أمان عشان لا يلمس الهيدر أو الفوتر */
+    background-color: #f0f2f5; 
+    min-height: 70vh;
+}
+
+/* المربع الأبيض للنموذج */
+.form-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* عرض  النماذج */
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .input-group {
-    position: relative;
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 
-.input-group i {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: gray;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 12px 12px 12px 35px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
-
-.btn {
+.form-card input {
     width: 100%;
     padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box; /* يضمن أن الـ Padding لا يزيد العرض */
+}
+/* تنسيق زر الارسال*/
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a428a;
+    color: #fff;
     border: none;
-    border-radius: 25px;
-    background: linear-gradient(to right, #3f51b5, #6a5acd);
-    color: white;
-    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 999;
-    cursor: pointer;
-    font-size: 22px;
+.submit-btn:hover {
+    background-color: #123166;
 }

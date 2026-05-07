@@ -1,4 +1,4 @@
-
+<!-- ai صفحة تخصص -->
 <!DOCTYPE html>
 <html >
 <head >
@@ -10,9 +10,9 @@
 </head>
 
 <body>
-
+ <!--كود الهيدر -->
 <header class="navbar">
-
+    <!-- كود اضافة اللوقو واسم الموقع -->
    <div class="logo-box">
     <img src="photo/logo2.png" class="logo-img">
     <span class="logo-text">
@@ -21,14 +21,14 @@
 
 </div>
 
-
+    <!-- اضافة خانة البحث -->
     <div class="search-box">
         <img src="photo/search1.png" class="search-icon">
         <input type="text" placeholder="Search for courses...">
         <button class="search-button">Search</button>
     </div>
 
-    
+      <!-- اضافة الروابط الاساسيه-->
     <div class="nav-left">
         <span class="home-pos">
             <a href="Home.html" class="nav-home"><img src="photo/HOME2.png" class="home-icon"></a>
@@ -46,7 +46,7 @@
         </span>
     </div>
 </header>
-
+  <!-- معلومات عن التخصص-->
 <section class="about-section">
     <h2 class="about-h2"><b>About the Major</b></h2>
     <h4>
@@ -57,12 +57,12 @@
     <h2 class="courses-title"><span class="linebefore"></span>
         Courses Available
     </h2>
-
+  <!-- بداية اضافة التخصصات -->
     <div class="courses-container">
 
     <div class="offer-card" >
     
-    
+     <!-- كود اضافة الدورة للمفضلات-->
     <div class="card-header">
         <span class="favorite-icon">❤</span> 
          <img src="photo/AI.png" alt="صورة تدل على الدورة">
@@ -96,29 +96,19 @@
     </div>
 </main>
 
-<footer class="nav-footer">
-
-   <div class="logo-box">
-    <img src="photo/logo2.png" class="logo-img">
-    <span class="logo-text">
-    <span class="part1">Devora</span><span class="part2">course</span>
-</span>
-</div>
-       
-</footer>
-
+ <!-- كود تسجيل الدخول-->
 <div class="modal" id="loginModal">
     <div class="small-login-box">
 
         <span class="close">&times;</span>
 
         <div class="logo-box">
-    <img src="photo/logo3.png" class="logo-img">
-    <span class="logo-text">
-    <span class="text1">Devora</span><span class="text2">course</span>
-</span>
-
-</div>
+      <img src="photo/logo3.png" class="logo-img">
+       <span class="logo-text">
+      <span class="text1">Devora</span><span class="text2">course</span>
+      </span>
+      
+      </div>
 
          <form class="login-form" action="my-account.html" >
     <label>Username</label>
@@ -138,25 +128,67 @@
     </div>
 </div>
 <script>
-const modal = document.getElementById("loginModal");
-const profileBtn = document.getElementById("profileBtn");
-const closeBtn = document.querySelector(".close");
+         const modal = document.getElementById("loginModal");
+         const profileBtn = document.getElementById("profileBtn");
+         const closeBtn = document.querySelector(".close");
 
-profileBtn.onclick = () => modal.style.display = "block";
-closeBtn.onclick = () => modal.style.display = "none";
+         profileBtn.onclick = () => modal.style.display = "block";
+          closeBtn.onclick = () => modal.style.display = "none";
 
-window.onclick = (e) => {
-    if (e.target === modal) modal.style.display = "none";
-}
+       window.onclick = (e) => {
+         if (e.target === modal) modal.style.display = "none";
+             }
 
 
-document.querySelectorAll('.favorite-icon').forEach(icon => {
-    icon.addEventListener('click', () => {
+       document.querySelectorAll('.favorite-icon').forEach(icon => {
+          icon.addEventListener('click', () => {
         icon.classList.toggle('active');
-    });
-});
+               });
+              });
+   </script>
+   
 
-</script>
+  <!-- كود الفوتر-->
+<footer class="main-footer">
+         <div class="container">
+            <div class="footer-grid">
+            
+                <div class="footer-column">
+                     <h3>Contact Us</h3>
+                     <p>📍Taif - Taif University</p>
+                     <p>📞 0123456789</p>
+                     <p>✉️ info@educational.com</p>
+                     </div>
 
-</body>
-</html>
+                     <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="my-account.html">Favorites</a></li>
+                        </ul>
+                      </div> 
+
+                     <div class="footer-column">
+                        <h3> Programs</h3>
+                        <p>Free training courses<br> for various specializations. </p>
+                       </div> 
+                
+                    <div class="footer-column">
+                        <h3>Overview</h3>
+                        <p>An e-learning platform<br> that combines self-paced <br>and interactive learning.</p>
+                      </div>
+
+                    </div>
+
+                     <div class="footer-bottom">
+                       <hr>
+                      <p>© 2026 All Rights Reserved - Devora Platform</p>
+                        </div>
+             </div>
+</footer>
+
+     
+  </body>
+  </html>
+

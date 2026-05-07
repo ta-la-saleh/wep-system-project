@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+ <!-- صفحة تسجنيل الدخول اذا كان المستخدم ما عنده حساب من قبل -->
+ 
+ <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -11,9 +13,9 @@
 <body>
 
 <div class="page-content">
-
+ <!-- كود الهيدر -->
     <header class="navbar">
-
+         <!-- كود اضافة اللوقو واسم الموقع -->
         <div class="logo-box">
             <img src="photo/logo2.png" class="logo-img">
             <span class="logo-text">
@@ -21,13 +23,13 @@
                 <span class="part2">course</span>
             </span>
         </div>
-
+          <!-- كود اضافة خانة البحث -->
         <div class="search-box">
             <img src="photo/search1.png" class="search-icon">
             <input type="text" placeholder="Search for courses...">
             <button class="search-button">Search</button>
         </div>
-
+         <!-- كود للروابط الاساسيه-->
         <div class="nav-left">
             <span class="home-pos">
                 <a href="Home.html" class="nav-home">
@@ -48,53 +50,76 @@
 
     </header>
 
-    <form>
-        <div class="container">
-            <div class="card">
-
-                <div class="icon-circle">
-                    <i class="fa fa-user-plus"></i>
-                </div>
-
-                <h2>Create Your Account</h2>
-                <p>Fill in your details to get started</p>
-
-                <div class="input-group">
-                    <i class="fa fa-user"></i>
-                    <input type="text" placeholder="Enter your User name">
-                </div>
-
-                <div class="input-group">
-                    <i class="fa fa-phone"></i>
-                    <input type="tel" placeholder="05********">
-                </div>
-
-                <div class="input-group">
-                    <i class="fa fa-envelope"></i>
-                    <input type="email" placeholder="example@mail.com">
-                </div>
-
-                <div class="input-group">
-                    <i class="fa fa-lock"></i>
-                    <input type="password" placeholder="**********">
-                </div>
-
-                <button class="btn">Create Account</button>
-
-            </div>
+ <!-- كود مربع انشاء حساب جديد -->
+<div class="main-wrapper">
+    <div class="form-card">
+        <div class="form-header">
+             <i class="user-icon">👤</i> 
+             <h2>Create Your Account</h2>
+             <p>Fill in your details to get started</p>
         </div>
-    </form>
+         <!--   من هنا تبدا خانات تسجيل الدخول /  لازم ربطها بقاعدة البيانات  واضافة جافا فالديشن -->
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Enter your User name" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" placeholder="05*********" required>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="example@mail.com" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+    </div>
+</div>
+
+
 
 </div>
 
-<footer class="nav-footer">
-    <div class="logo-box">
-        <img src="photo/logo2.png" class="logo-img">
-        <span class="logo-text">
-            <span class="part1">Devora</span>
-            <span class="part2">course</span>
-        </span>
-    </div>
+
+   <!-- كود الفوتر-->
+<footer class="main-footer">
+         <div class="container">
+            <div class="footer-grid">
+            
+                <div class="footer-column">
+                     <h3>Contact Us</h3>
+                     <p>📍Taif - Taif University</p>
+                     <p>📞 0123456789</p>
+                     <p>✉️ info@educational.com</p>
+                     </div>
+
+                     <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="my-account.html">Favorites</a></li>
+                        </ul>
+                      </div> 
+
+                     <div class="footer-column">
+                        <h3> Programs</h3>
+                        <p>Free training courses<br> for various specializations. </p>
+                       </div> 
+                
+                    <div class="footer-column">
+                        <h3>Overview</h3>
+                        <p>An e-learning platform<br> that combines self-paced <br>and interactive learning.</p>
+                      </div>
+
+                    </div>
+
+                     <div class="footer-bottom">
+                       <hr>
+                      <p>© 2026 All Rights Reserved - Devora Platform</p>
+                        </div>
+             </div>
 </footer>
 
 </body>

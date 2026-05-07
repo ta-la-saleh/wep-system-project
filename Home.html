@@ -4,12 +4,13 @@
     <link href="photo/logo-1.png " type="img/x-icon" rel="icon">
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <!--ربط ملف css-->
     <link href="style.css" rel="stylesheet">
 
 </head>
 
 <body>
-    
+    <!--كود الهيدر -->
 <header class="navbar">
 
 
@@ -19,13 +20,13 @@
         <span class="part1">Devora</span><span class="part2">course</span>
         </span>
     </div>
-
+       <!--كود خانة البحث-->
     <div class="search-box">
         <img src="photo/search1.png" class="search-icon">
         <input type="text" placeholder="Search for courses...">
         <button class="search-button">Search</button>
     </div>
-
+        <!--كود لرابط الصفحه الرئيسيه-->
     <div class="nav-left">
         <span class="home-pos">
             <a href="Home.html" class="nav-home"><img src="photo/HOME2.png" class="home-icon"></a>
@@ -36,7 +37,7 @@
         </span>
 
         <span class="divider"></span>
-
+          <!--كود لرابط الصفحه الشخصيه-->
         <span id="profileBtn"class="Profile">
             <img src="photo/profile1.png" class="profile-icon">
              <span class="nav-item">Profile</span> 
@@ -44,7 +45,7 @@
 
     </div>
 </header>
-
+<!--كود لعرض الصوره الظاهره في الصفحه الرئيسيه-->
 <section class="home-section">
     <img src="photo/computer-img.webp" class="computer-img">
 
@@ -57,7 +58,7 @@
 <h2 class="courses-title">
     <span class="linebefore"></span> Majors 
 </h2>
-
+<!-- كود عرض جميع التخصصات المتوفرهو / بحيث يحتوي على روابط تنقل كل تخصص لصفحه مستقله فيه -->
 <section class="major">
 
     <div class="spec-box">
@@ -97,7 +98,7 @@
     </div>
 
 </section>
-
+ <!-- كود لاضافه الدورات الاكثر شهره بحيث تسهل على المستخدم اختيار الدورات المفيده-->
 <main>
     <h2 class="courses-title">
         <span class="linebefore"></span>
@@ -105,7 +106,7 @@
     </h2>
 
     <div class="courses-container">
-
+           <!-- كود اضافه الدورات الى قائمة المفضلات موجود مع كل دوره في الموقع -->
         <div class="offer-card">
             <div class="card-header">
                 <span class="favorite-icon">❤</span>
@@ -135,7 +136,7 @@
                 <a href="https://www.edraak.org/programs/course/cs50-vt2_2020/" class="view-btn">عرض التفاصيل</a>
             </div>
         </div>
-
+         
         <div class="offer-card">
             <div class="card-header">
                 <span class="favorite-icon">❤</span>
@@ -185,16 +186,7 @@
 </main>
 
 
-<footer class="nav-footer">
 
-   <div class="logo-box">
-        <img src="photo/logo2.png" class="logo-img">
-        <span class="logo-text">
-            <span class="part1">Devora</span><span class="part2">course</span>
-        </span>
-    </div>
-       
-</footer>
 
 
 <div class="modal" id="loginModal">
@@ -209,7 +201,9 @@
             </span>
 
         </div>
+        
 
+         <!-- يظهر على شكل نافذه  Profile كود تسجيل الدخول اذا كان المستخدم عنده حساب من قبل موجود في ال  -->
 <form class="login-form" action="my-account.html" >
     <label>Username</label>
     <input type="text" placeholder="Enter your username" required>
@@ -219,7 +213,7 @@
 
     <button type="submit" class="login-btn">Login</button>
 </form>
-
+     <!-- في حال ما كان عنده حساب يروح ينتقل على صفحة تسجيل الدخول -->
         <p class="signup">
             Don’t have an account?
             <a href="register.html">Sign up now</a>
@@ -248,6 +242,47 @@ document.querySelectorAll('.favorite-icon').forEach(icon => {
 });
 
 </script>
+ 
+            <!--كود الفوتر-->
+     <footer class="main-footer">
+         <div class="container">
+            <div class="footer-grid">
+            
+                <div class="footer-column">
+                     <h3>Contact Us</h3>
+                     <p>📍Taif - Taif University</p>
+                     <p>📞 0123456789</p>
+                     <p>✉️ info@educational.com</p>
+                     </div>
+
+                     <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="my-account.html">Favorites</a></li>
+                        </ul>
+                      </div> 
+
+                     <div class="footer-column">
+                        <h3> Programs</h3>
+                        <p>Free training courses<br> for various specializations. </p>
+                       </div> 
+                
+                    <div class="footer-column">
+                        <h3>Overview</h3>
+                        <p>An e-learning platform<br> that combines self-paced <br>and interactive learning.</p>
+                      </div>
+
+                    </div>
+
+                     <div class="footer-bottom">
+                       <hr>
+                      <p>© 2026 All Rights Reserved - Devora Platform</p>
+                        </div>
+             </div>
+</footer>
+        
 
 </body>
 </html>
