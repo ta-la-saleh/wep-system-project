@@ -97,7 +97,7 @@ if (isset($_GET['search']) && !empty(trim($_GET['search']))) {
 </section>
  <!-- كود لاضافه الدورات الاكثر شهره عشان يسهل على المستخدم اختيار الدورات -->
 <main>
-    <h2 class="courses-title">
+   <h2 class="courses-title" id="popular-courses">
         <span class="linebefore"></span>
         Most Popular Courses
     </h2>
