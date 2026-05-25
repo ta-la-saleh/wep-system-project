@@ -1,0 +1,787 @@
+/* تنسيق الصفحه بشكل عام*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+/* تنسيق كلاس في الهيدر في الصفه الرئيسية */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background: linear-gradient(90deg, #2347d8, #684bc0);
+    color: white;
+    direction: ltr;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100px;
+}
+/* الكلاس الي فيه كود الروابط الاساسيه */
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 18px;
+}
+ /*  home , profile الكلاس الي محطوط فيه رابط ال*/
+.nav-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+ /*  profile الكلاس الي فيه رابط ال */
+.divider {
+    width: 1.5px;
+    height: 22px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+/* الكلاس الي فيه رابط ال home */
+.home-pos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.profile-pos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.profile-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.nav-home {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+ /* تنسيق خانة البحث */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 40px;
+    padding: 5px;
+    width: 380px;
+    height: 48px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.search-button {
+    background: linear-gradient(90deg, #4e67c9, #684bc0);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-icon {
+    width: 30px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+}
+
+.part1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+}
+
+.part2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #6b67d7;
+}
+
+.about-section {
+    background: #fff;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.about-h2 {
+    margin-bottom: 15px;
+    color: #0e1232;
+}
+/* تنسيق الصوره الموجوده في الصفحه الرئيسيه */
+.home-section {
+    height: 200px;
+    overflow: hidden;
+    background: #fff;
+    margin: 25px;
+    padding: 0 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.computer-img {
+    max-width: 300px;
+}
+/* تنسيق الكلام الموجود مع الصوره في الصفحه الرئيسيه */
+.home-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.h1-home {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.h2-home {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, #4e67c9, #684bc0);
+    background-clip: text;
+    color: transparent;
+}
+/*  الموجود في الصفحه الرئيسيه  Most Popular Courses تنسيق لل */
+.linebefore {
+    width: 5px;
+    height: 25px;
+    background: linear-gradient(90deg, #2347d8, #684bc0);
+    border-radius: 3px;
+}
+
+.major {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.spec-box {
+    background: #fff;
+    width: 180px;
+    padding: 25px 15px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.spec-box:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #979ce5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin: 0 auto 10px;
+}
+
+.spec-box h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.spec-box p {
+    font-size: 14px;
+    color: #777;
+}
+
+.courses-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 30px;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 35px;
+    padding: 0 30px;
+    margin-bottom: 40px;
+}
+/* تنسيق لينك التخصصات */
+.major-link {
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid #2347d8;
+}
+
+.offer-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+}
+
+.offer-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.offer-card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #6c5ce7;
+}
+
+.offer-card .description {
+    padding: 0 18px;
+    font-size: 14px;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+.view-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #2347d8, #684bc0);
+    color: white;
+    padding: 10px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: #a29bfe;
+    opacity: 0.85;
+    color: white;
+}
+
+.card-header {
+    position: relative;
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: 0.25s ease;
+    border: 1px solid #ddd;
+}
+ /* تنسيق القلب الظاهر مع كل دوره*/ 
+.favorite-icon {
+    text-decoration: none;
+    color: black;
+}
+
+/* أضفنا !important لنجبر المتصفح على تطبيق اللون الأحمر فوراً */
+.favorite-icon:hover,
+.favorite-icon.saved {
+    color: red !important;
+}
+
+.features {
+    margin: 30px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    direction: ltr;
+    text-align: left;
+}
+
+.feature-box {
+    text-align: center;
+}
+
+.feature-box img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(4px);
+}
+
+
+.small-login-box {
+    width: 350px;
+    background: #fff;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    color: #444;
+}
+
+.Profile, .Profile * {
+    cursor: pointer;
+}
+
+.login-header {
+    position: relative;
+    text-align: center;
+}
+
+.login-header h2 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+    color: #3b5bdb;
+}
+
+.login-form label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.login-form input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.login-btn {
+    padding: 8px;
+    background: #4e67c9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.text1 {
+    color: #3546ca;
+    font-size: 20px;
+}
+
+.text2 {
+    color: #9266e5;
+    font-size: 20px;
+}
+
+.signup {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.signup a {
+    color: #4e67c9;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* تنسيق الفوتر */
+.main-footer{
+    background: linear-gradient(90deg, #2347d8, #684bc0);
+    padding: 50px 0 20px 0;  width: 100vw;position: relative;
+    left: 50%; right: 50%;margin-left: -50%; margin-right: -50%;
+}
+
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between; /* عشان اوزع الاعمده */
+    gap: 100px;
+}
+
+.footer-column {
+    flex: 1; /* مساحة كل عامود*/
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+.footer-column h3 {
+    color: #ffffff; /*اللون الابيض للعناوين */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffffff; /* خط بنفسجي تحت العنوان */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ffffff; /* اللون الابيض للنصوص */
+}
+/* تنسيق القائمه في الفوتر */
+.footer-column ul {
+    list-style: none; /* عشان ما تظهر القائمه بالنقاط*/
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #a29bfe; /* يتغير للبنفسجي عند التمرير */
+    padding-right: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+/* تنسيق الخط الموجود في الفوتر*/ 
+.footer-bottom hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin-bottom: 20px;
+}
+ /* تنسيق اخر جزء في الفوتر*/ 
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #f4f4f5;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    opacity: 0.8;
+    color: #fff;
+}
+
+
+
+ /*  بشكل عام body تنسيق */ 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex: 1;
+}
+
+/* تنسيق صفحة انشاء الحساب*/
+/* الحاوية الكبرى التي تضمن توسيط كل شيء */
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px; /* مسافة أمان عشان لا يلمس الهيدر أو الفوتر */
+    background-color: #f0f2f5; 
+    min-height: 70vh;
+}
+
+/* المربع الأبيض للنموذج */
+.form-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* عرض  النماذج */
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.form-card input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box; /* يضمن أن الـ Padding لا يزيد العرض */
+}
+/* تنسيق زر الارسال*/
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a428a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #123166;
+}
+
+/* تنسيق صفحة الادمن*/
+.stats-box {
+    background-color: white;
+    border: 2px solid #684bc0;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    
+    /* هذي السطرين هي اللي تجيبه في النص */
+    margin: 30px auto 10px auto; /* 100px من فوق عشان ينزل، و auto من اليمين واليسار عشان يتوسط */
+    
+    text-align: center; /* يوسط الكلام داخل المربع */
+}
+
+.stats-box h1 {
+    color: #2347d8;
+    font-size: 40px;
+}
+/* صندوق الفورم */
+.form-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px;
+    width: 400px;         /* خليناه أعرض من مربع الإحصائية شوي */
+    margin: 10px auto;    /* auto عشان يجي في النص تحت الإحصائية */
+    border-radius: 15px;
+    text-align: center;
+}
+
+.form-box h2 {
+    color: #5e4bb6;
+    margin-bottom: 20px;
+}
+
+/* تنسيق المربعات اللي نكتب فيها */
+.form-box input, .form-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: block;      /* عشان يجون تحت بعض */
+    box-sizing: border-box; /* عشان الـ padding ما يخرب العرض */
+}
+
+/* تنسيق الزر */
+.form-box button {
+    background-color: #5e4bb6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.form-box button:hover {
+    background-color: #2347d8; /* يتغير لونه للأزرق عند التمرير */
+}
+.table-container {
+    width: 80%;
+    margin: 10px auto 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* عشان تختفي الفراغات بين الحدود */
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f9fa;
+    color: #684bc0; /* لونك البنفسجي */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* حركة خفيفة عند التمرير بالماوس */
+}
+ 
+/* إخفاء رسالة النجاح بالبداية في صفحة الريجستر */
+.success-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.success-modal .modal-content {
+    background: white;
+    padding: 25px 35px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+}
+
+/* زر المنيو */
+/* --- تنسيقات شريط المنيو الجديد والتخصصات المنسدلة --- */
+.sub-menu-bar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #f0f2f5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    direction: rtl; /* لجعل تصفح القائمة من اليمين لليسار متناسقاً مع اللغة */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu-links-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 25px;
+}
+
+.nav-menu-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link-item {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 5px 0;
+}
+
+.menu-link-item:hover, .menu-link-item.active {
+    color: #2347d8; /* متناسق مع بداية التدرج الخاص بهويتك */
+}
+
+/* القائمة المنسدلة للتخصصات */
+.menu-dropdown {
+    position: relative;
+}
+
+.dropdown-inside-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border-radius: 10px;
+    display: none; /* مخفية افتراضياً */
+    z-index: 200;
+}
+
+.dropdown-inside-list li a {
+    display: block;
+    padding: 10px 20px;
+    color: #444;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background 0.2s, color 0.2s;
+    text-align: right;
+}
+
+.dropdown-inside-list li a:hover {
+    background-color: #f5f6fa;
+    color: #684bc0; /* متناسق مع نهاية التدرج الخاص بهويتك */
+}
+
+/* إظهار القائمة بسلاسة عند تمرير الماوس */
+.menu-dropdown:hover .dropdown-inside-list {
+    display: block;
+}
