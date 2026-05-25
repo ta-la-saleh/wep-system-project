@@ -181,7 +181,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="success-icon">✔</div> <!-- أيقونة النجاح -->
         <h3>Success!</h3>
         <p>Your account has been created successfully.</p>
-        <button onclick="closeModal()" class="close-modal-btn"> //هنا زر ال continue
+        <button onclick="closeModal()" class="close-modal-btn"> <!-- هنا زر ال continue -->
             Continue
         </button>
 
