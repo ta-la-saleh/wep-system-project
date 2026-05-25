@@ -18,7 +18,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     // نتحقق من وجود الدورة في قاعدة البيانات
     if ($result->num_rows > 0) {
         $course = $result->fetch_assoc();
-        
+        $title = htmlspecialchars($course['title']);
     // تخزين بيانات الدورة مع حماية النصوص من XSS        
         $description = htmlspecialchars($course['description']);
         $level = htmlspecialchars($course['level']);
@@ -37,6 +37,13 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     exit();
 }
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 <!-- بداية صفحة عرض الدورة -->
 <div class="main-wrapper">
     <div class="form-card">
@@ -50,7 +57,8 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         <!-- عرض صورة الدورة إذا كانت موجودة -->
         <?php if(!empty($image)): ?>
             <div class="course-image-box">
-                <img src="photo/<?php echo $image; ?>" alt="<?php echo $title; ?>">
+                <img src="photo/<?php echo $image; ?>" alt="<?php echo $title; ?>" 
+           style="width:100%; max-width:320px; height:auto; border-radius:15px; display:block; margin:20px auto;">
             </div>
         <?php endif; ?>
 
@@ -70,3 +78,5 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 //  تضمين الفوتر لإنهاء الصفحة 
 include 'footer.php';
 ?>
+</body>
+</html>
